@@ -50,14 +50,14 @@ function start() {
       // 解决 Request path contains unescaped characters
       message = encodeURI(message);
 
-      //if (server === "on") {
+      if (server === "on") {
         axios
           .get("https://sc.ftqq.com/" + sckey + ".send?text=" + message)
           // 解决 UnhandledPromiseRejectionWarning
           .catch((e) => {
             console.log(e);
           });
-      //}
+      }
     })
     .catch((error) => {
       console.log("hao4K:签到出错" + error);
