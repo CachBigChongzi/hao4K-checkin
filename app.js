@@ -22,6 +22,7 @@ const headers = {
 };
 
 function start() {
+  	console.log(headers);
   axios
     .get(checkInUrl, {
       headers,
