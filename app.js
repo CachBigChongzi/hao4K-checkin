@@ -23,6 +23,7 @@ const headers = {
 
 function start() {
     console.log(headers);
+    console.log(server);
   axios
     .get(checkInUrl, {
       headers,
